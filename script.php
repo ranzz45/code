@@ -3,7 +3,7 @@
 date_default_timezone_set("Asia/Jakarta");
 //fungsi check tanggal merah
 function tanggalMerah($value) {
-	$array=json_decode(file_get_contents("https://raw.githubusercontent.com/ranzz45/hari_libur_nasional/master/libur_nasional_apple.json"),true);
+	$array=json_decode(file_get_contents("https://raw.githubusercontent.com/ranzz45/code/master/libur_nasional_apple.json"),true);
 	//check tanggal merah berdasarkan libur nasional
 	if(isset($array[$value]))
 :		echo"tanggal merah $array[$value]";
